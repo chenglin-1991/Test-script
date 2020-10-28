@@ -1,0 +1,36 @@
+1、创建pair
+alamocli pair list
+alamocli pair create xt1 xt2
+
+删除磁盘分区：alamocli disk clear xtao-all-disk -f
+alamocli disk list
+alamocli pair list
+
+初始化磁盘分区：alamocli disk init xtao-all-disk -f
+
+disk list -P port_name :查看当前port上的盘
+例如：xd-alamo disk list -P host3:port-3:0
+
+2、修改脚本创建pool
+alamocli pool create
+
+3、创建domain、创建存储卷
+alamocli volume
+
+4、直接存储节点set option参数
+gluster v set vol1 key value
+
+nmap -v -sn 192.168.61.0/24
+
+rsync：
+https://www.cnblogs.com/f-ck-need-u/p/7220009.html
+
+5、设置ipzone、ntp、dns
+
+6、hwclock -w
+
+zpool get all |grep ashift
+
+
+
+
