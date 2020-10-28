@@ -1,0 +1,12 @@
+[Unit]
+Description=xftp is XTAO server daemon
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/xftp
+Restart=always
+RestartSec=0
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target

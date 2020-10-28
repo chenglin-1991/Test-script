@@ -1,0 +1,29 @@
+{
+    "name": "xftp",
+    "version": "0.0.1",
+    "release": "release",
+    "summary": "Create binary rpm package with xftp",
+    "arch": "x86_64",
+    "description": "a cluster ftp server",
+    "license": "xtao.com",
+    "files": [
+    {
+        "from": "./!name!",
+        "to": "/usr/local/bin/",
+        "base": "",
+        "type": ""
+    },
+    {
+        "from": "./rpm/!name!.service",
+        "to": "/usr/lib/systemd/system/",
+        "base": "./rpm/",
+        "type": ""
+    },
+    {
+        "from": "./rpm/!name!.conf",
+        "to": "/etc/xftp/",
+        "base": "./rpm/",
+        "type": ""
+    }
+    ]
+}

@@ -1,0 +1,13 @@
+[Unit]
+Description= Xtor OOB Service
+After=network.target glusterd.service
+Requires=glusterd.service
+
+[Service]
+ExecStart=/opt/xtor/xtorsvr
+Restart=always
+RestartSec=0
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target
